@@ -63,7 +63,7 @@ class MessageRepository implements QueueMessageRepositoryInterface
     /**
      * @inheritdoc
      */
-    public function peek(string $queueName)
+    public function peek($queueName)
     {
         // Create collection instance and apply filter
         $collection = $this->collectionFactory->create()
